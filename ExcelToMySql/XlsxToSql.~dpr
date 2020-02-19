@@ -1,0 +1,15 @@
+program XlsxToSql;
+
+uses
+  Forms,
+  MainForm in 'MainForm.pas' {Form1},
+  DataModule in 'DataModule.pas' {DM1: TDataModule};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TDM1, DM1);
+  Application.Run;
+end.

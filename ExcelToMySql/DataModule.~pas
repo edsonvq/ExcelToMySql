@@ -1,0 +1,26 @@
+unit DataModule;
+
+interface
+
+uses
+  SysUtils, Classes, DB, ADODB;
+
+type
+  TDM1 = class(TDataModule)
+    DataSourceBanco: TDataSource;
+    ConexaoBanco: TADOConnection;
+    QueryBanco: TADOQuery;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  DM1: TDM1;
+
+implementation
+
+{$R *.dfm}
+
+end.
